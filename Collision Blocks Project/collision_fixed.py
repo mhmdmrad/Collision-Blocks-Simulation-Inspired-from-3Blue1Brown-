@@ -7,25 +7,21 @@ def col(m1, m2):
     count = 0
 
     while True:
-        # stop if both are (effectively) moving right and the moving block is pulling away
+
         if v1 > -eps and v2 > -eps and v2 >= v1 - eps:
             break
-
-        # small block hits the wall
         if v1 < -eps:
             v1 = -v1
             count += 1
             continue
-
-        # block-block elastic collision
         new_v1 = ((m1 - m2) / (m1 + m2)) * v1 + (2 * m2 / (m1 + m2)) * v2
         new_v2 = (2 * m1 / (m1 + m2)) * v1 + ((m2 - m1) / (m1 + m2)) * v2
         v1, v2 = new_v1, new_v2
         count += 1
-
     return count
 
 if __name__ == "__main__":
     m1 = float(input("Enter mass of block near wall: "))
     m2 = float(input("Enter mass of moving block: "))
     print("Total collisions =", col(m1, m2))
+
