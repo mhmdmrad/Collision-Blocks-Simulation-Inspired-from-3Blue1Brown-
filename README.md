@@ -15,7 +15,7 @@ The repository contains both the corrected version of the program and the origin
 | collision_fixed.py | Final, corrected simulation |
 | collision_buggy.py | Original version before fixing the issue |
 | TROUBLESHOOTING.md | Short explanation of the problem and the fix |
-| README.md | Documentation for the project |
+
 
 ---
 
