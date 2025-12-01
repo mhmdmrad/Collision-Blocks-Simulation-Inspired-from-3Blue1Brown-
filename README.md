@@ -42,4 +42,5 @@ A brief explanation is provided in `TROUBLESHOOTING.md`.
 
 This project is based on the explanation from the 3Blue1Brown video:  
 “The Most Unexpected Answer to a Counting Puzzle.”
+https://youtu.be/HEfHFsfGXjs
 
