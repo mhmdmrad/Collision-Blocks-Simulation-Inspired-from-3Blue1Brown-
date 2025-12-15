@@ -8,7 +8,7 @@ This file explains the problem encountered in the original simulation and how it
 
 The program simulates elastic collisions between two blocks to count the total number of collisions. Initially, the code produced incorrect results for some inputs. For example:
 
-- Input: m1 = 1, m2 = 1  
+- Input: m1 = 1 , m2 = 1  
 - Expected collisions: 3  
 - Original output: 0  
 
@@ -41,3 +41,4 @@ This prevents early termination caused by tiny rounding errors, ensuring the sim
 
 ## Result
 After the fix, the simulation correctly counts collisions for all tested mass ratios. The corrected version is in collision_fixed.py, while the original version is preserved in collision_buggy.py for reference.
+
